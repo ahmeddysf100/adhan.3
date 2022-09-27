@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
+    
+
+    <title>SALAT</title>
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="digital-clock">00:00:00</div>
+
+        <form action="/" method="post">
+
+            <div class="segment">
+                <h1>Enter The City !</h1>
+            </div>
+
+            <label>
+                <input type="text" placeholder="City Name" name="cityName" />
+            </label>
+
+            <button class="red" type="submit"><i class="icon ion-md-lock"></i> Submit</button>
+
+        </form>
+        <br>
+        <div class="ahm">AHMEDYSF100🥵</div>
+    </div>
+
+    <div class="solar-syst">
+        <div class="sun"></div>
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth"></div>
+        <div class="mars"></div>
+        <div class="jupiter"></div>
+        <div class="saturn"></div>
+        <div class="uranus"></div>
+        <div class="neptune"></div>
+        <div class="pluto"></div>
+        <div class="asteroids-belt"></div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        clockUpdate();
+        setInterval(clockUpdate, 1000);
+    })
+
+    function clockUpdate() {
+        var date = new Date();
+        $('.digital-clock').css({
+            'color': '#fff',
+            'text-shadow': '0 0 6px #ff0'
+        });
+
+        function addZero(x) {
+            if (x < 10) {
+                return x = '0' + x;
+            } else {
+                return x;
+            }
+        }
+
+        function twelveHour(x) {
+            if (x > 12) {
+                return x = x - 12;
+            } else if (x == 0) {
+                return x = 12;
+            } else {
+                return x;
+            }
+        }
+
+        var h = addZero(twelveHour(date.getHours()));
+        var m = addZero(date.getMinutes());
+        var s = addZero(date.getSeconds());
+
+        $('.digital-clock').text(h + ':' + m + ':' + s)
+    }
+</script>
+
+</html>
