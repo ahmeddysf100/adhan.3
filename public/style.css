@@ -54,6 +54,8 @@ body {
   form {
     width: 267px !important;
   }
+
+
 }
 
 @media only screen and (min-width: 1023px) {
@@ -61,11 +63,19 @@ body {
     width: 400px !important;
   }
 
-   h1 {
+  h1 {
     font-size: 3.1rem !important;
   }
 
 }
+
+@media only screen and (max-width: 769px) {
+  .center {
+    top: 35% !important;
+  }
+}
+
+
 
 .digital-clock {
   margin: auto;
@@ -93,35 +103,36 @@ h1 {
   color: rgb(133, 114, 63);
 }
 
-h3{
-  color:whitesmoke;
-  text-shadow:1px 1px 1px #576dc5 !important;
+h3 {
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #576dc5 !important;
   line-height: 2;
 }
 
-h2{
-  color:whitesmoke;
-  text-shadow:1px 1px 1px #576dc5 !important;
+h2 {
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #576dc5 !important;
   line-height: 2;
   margin-top: 1rem;
 }
 
-span{
+span {
   color: rgb(87, 161, 91);
   text-shadow: none;
 }
 
-.eq{
-  color:aquamarine;
-  text-shadow: none;
-}
-.coma{
-  color:rgb(99, 86, 48);
+.eq {
+  color: aquamarine;
   text-shadow: none;
 }
 
-.date{
-  color:cornsilk ; 
+.coma {
+  color: rgb(99, 86, 48);
+  text-shadow: none;
+}
+
+.date {
+  color: cornsilk;
   text-shadow: none !important;
   font-size: 2rem;
   margin-bottom: none;
