@@ -52,25 +52,30 @@ body {
 
 
 @media only screen and (max-width: 1025px) {
-  .center{
+  .center {
     top: 52%;
   }
 
 }
 
 @media only screen and (max-width: 769px) {
-  .center{
+  .center {
     top: 50%;
   }
-  h2{
+
+  h2 {
     font-size: 1.2rem;
   }
 
 }
 
 @media only screen and (max-width: 426px) {
-  .center{
-    top: 55%;
+  .center {
+    top: 58%;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
 }
@@ -96,46 +101,47 @@ body {
 
 
 h1 {
-  margin-top:2rem;
-  color:rgba(255, 224, 183, 0.605)
+  margin-top: 2rem;
+  color: rgba(255, 224, 183, 0.605)
 }
 
-h3{
-  color:whitesmoke;
-  text-shadow:1px 1px 1px #576dc5 !important;
+h3 {
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #576dc5 !important;
   line-height: 2;
 }
 
-h2{
-  color:whitesmoke;
-  text-shadow:1px 1px 1px #576dc5 !important;
+h2 {
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #576dc5 !important;
   line-height: 2;
   margin-top: 1rem;
 }
 
-span{
+span {
   color: rgb(87, 161, 91);
   text-shadow: none;
 }
 
-.eq{
-  color:aquamarine;
-  text-shadow: none;
-}
-.coma{
-  color:rgb(99, 86, 48);
+.eq {
+  color: aquamarine;
   text-shadow: none;
 }
 
-.date{
-  color:cornsilk ; 
+.coma {
+  color: rgb(99, 86, 48);
+  text-shadow: none;
+}
+
+.date {
+  color: cornsilk;
   text-shadow: none !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: none;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
-.gold{
+.gold {
   color: rgb(151, 115, 23);
 }
 
@@ -145,8 +151,8 @@ p {
   text-shadow: 1px 1px 1px #FFF;
 }
 
-.ahm{
-  color:gold;
+.ahm {
+  color: gold;
 }
 
 
